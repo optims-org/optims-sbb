@@ -1,0 +1,19 @@
+input_paths:
+  persons: ..\..\assets\destination_choice\persons.yml
+  activity_sets: ..\..\assets\destination_choice\activity_sets.yml
+  activity_parameter: ..\..\assets\destination_choice\activity_parameter.yml
+  travel_components: ..\..\assets\destination_choice\travel_components.yml
+output_folder: ..\..\assets\destination_choice\output
+solver_settings:
+  solver_name: SCIP
+time_periods:
+  all_day:
+    period_start: 0
+    period_end: 24
+modes:
+  driving:
+    home_bound: True
+  public transport:
+    home_bound: False
+  soft modes:
+    home_bound: False

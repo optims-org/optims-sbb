@@ -1,0 +1,29 @@
+regular:
+  home_budget:
+    all:
+      penalty_short: 0
+      penalty_long: -0.35
+  dawn:
+  dusk:
+    all:
+      penalty_early: -0.7
+      penalty_late: 0
+  home:
+    all:
+      constant: 0.0
+      penalty_early: -0.2
+      penalty_late: -0.6
+  leisure:
+    all:
+      constant: 0.0
+      penalty_early: -0.10
+      penalty_late: -0.2
+      penalty_long: -0.70
+      penalty_short: -3.00
+  education:
+    all:
+      constant: 0.0
+      penalty_early: -0.25
+      penalty_late: -0.40
+      penalty_long: -0.95
+      penalty_short: -0.40

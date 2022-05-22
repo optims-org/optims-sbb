@@ -1,0 +1,48 @@
+1:
+  dawn:
+    activity_type: dawn
+    locations: homeplace
+    desired_duration: 11.4
+  dusk:
+    activity_type: dusk
+    scoring_group: multi_tours
+    locations: homeplace
+    desired_timing: 20.7
+  home:
+    activity_type: home
+    scoring_group: all
+    locations: homeplace
+    desired_timing: 17.0
+  lunch:
+    activity_type: leisure
+    scoring_group: lunch
+    locations:
+      - restaurant
+      - cafeteria
+    is_subtour: true
+    tour_type: work
+    desired_timing: 11.9
+    desired_duration: 0.9
+  sport:
+    activity_type: leisure
+    scoring_group: sport
+    locations: tennis
+    desired_timing: 18.3
+    desired_duration: 1.6
+  work:
+    activity_type: work
+    scoring_group: first_in_set
+    is_primary: true
+    locations: workplace
+    tour_no: 1
+    tour_type: work
+    desired_timing: 7.3
+    desired_duration: 9.7
+  work_2:
+    activity_type: work
+    scoring_group: following
+    is_primary: true
+    locations: workplace
+    tour_no: 1
+    tour_type: work
+    desired_timing: 13.5

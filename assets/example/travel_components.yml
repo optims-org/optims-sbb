@@ -1,0 +1,100 @@
+1:
+  car:
+    travel_times:
+      all_day:
+        homeplace:
+          homeplace: 99999
+          workplace: 0.3333333333333333
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 0.8
+        workplace:
+          homeplace: 0.3333333333333333
+          workplace: 99999
+          restaurant: 0.4166666666666667
+          cafeteria: 0.3333333333333333
+          tennis: 99999
+        restaurant:
+          homeplace: 99999
+          workplace: 0.4166666666666667
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        cafeteria:
+          homeplace: 99999
+          workplace: 0.3333333333333333
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        tennis:
+          homeplace: 0.8
+          workplace: 99999
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+  pt:
+    travel_times:
+      all_day:
+        homeplace:
+          homeplace: 99999
+          workplace: 0.5
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 0.6
+        workplace:
+          homeplace: 0.5
+          workplace: 99999
+          restaurant: 0.25
+          cafeteria: 0.25
+          tennis: 99999
+        restaurant:
+          homeplace: 99999
+          workplace: 0.25
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        cafeteria:
+          homeplace: 99999
+          workplace: 0.25
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        tennis:
+          homeplace: 0.6
+          workplace: 99999
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+  walk:
+    travel_times:
+      all_day:
+        homeplace:
+          homeplace: 99999
+          workplace: 1.0
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 2
+        workplace:
+          homeplace: 1.0
+          workplace: 99999
+          restaurant: 0.2
+          cafeteria: 0.16666666666666666
+          tennis: 99999
+        restaurant:
+          homeplace: 99999
+          workplace: 0.2
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        cafeteria:
+          homeplace: 99999
+          workplace: 0.16666666666666666
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 99999
+        tennis:
+          homeplace: 2
+          workplace: 99999
+          restaurant: 99999
+          cafeteria: 99999
+          tennis: 0

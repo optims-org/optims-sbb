@@ -1,0 +1,21 @@
+input_paths:
+  persons: ..\..\assets\example\persons.yml
+  activity_sets: ..\..\assets\example\activity_sets.yml
+  activity_parameter: ..\..\assets\example\activity_parameter.yml
+  travel_components: ..\..\assets\example\travel_components.yml
+solver_settings:
+  solver_name: SCIP
+model_settings:
+  mode_choice_restrictions: subtour_based
+time_periods:
+  all_day:
+    period_start: 0
+    period_end: 24
+modes:
+  car:
+    home_bound: True
+  pt:
+    home_bound: False
+  walk:
+    home_bound: False
+output_folder: ..\..\assets\example\output

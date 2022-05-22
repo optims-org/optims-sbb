@@ -1,0 +1,36 @@
+regular:
+  home_budget:
+    all:
+      penalty_short: 0
+      penalty_long: -0.35
+  dawn:
+  dusk:
+    multi_tours:
+      penalty_early: -0.7
+      penalty_late: 0
+  home:
+    all:
+      penalty_early: -0.07
+      penalty_late: -0.6
+  leisure:
+    lunch:
+      penalty_short: -7.5
+      penalty_long: -1.4
+      penalty_early: -1.6
+      penalty_late: -0.8
+    sport:
+      penalty_short: -3
+      penalty_long: -0.7
+      penalty_early: -0.08
+      penalty_late: 0
+  work:
+    first_in_set:
+      penalty_early: -0.6
+      penalty_late: -0.4
+    following:
+      penalty_early: -0.4
+      penalty_late: 0
+  work_budget:
+    all:
+      penalty_short: -0.02
+      penalty_long: 0

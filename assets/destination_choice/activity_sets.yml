@@ -1,0 +1,69 @@
+1:
+  dawn:
+    activity_type: dawn
+    locations: 33
+    desired_duration: 15.249993
+  dusk:
+    activity_type: dusk
+    scoring_group: all
+    locations: 33
+    desired_timing: 18.083333
+  home:
+    activity_type: home
+    scoring_group: all
+    participation: -1
+    locations: 33
+    desired_timing: 16.5
+  education_1:
+    activity_type: education
+    scoring_group: all
+    participation: -1
+    locations:
+      - 12
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 31
+    location_group: education
+    desired_timing: 8.333333
+    desired_duration: 3.633333
+  education_2:
+    activity_type: education
+    scoring_group: all
+    participation: -1
+    locations:
+      - 12
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 31
+    location_group: education
+    desired_timing: 13.500000
+    desired_duration: 2.750000
+  leisure:
+    activity_type: leisure
+    scoring_group: all
+    participation: -1
+    locations:
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+    desired_timing: 17.083333
+    desired_duration: 0.916667
