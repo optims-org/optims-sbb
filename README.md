@@ -1,4 +1,4 @@
-# OPTimization of Individual Mobility Schedules (OPTIMS)
+# OPTimization of Individual Mobility Schedules
 
 ``optims-sbb`` is a collaborative repository initiated by the
 [Transport and Mobility Laboratory at EPFL](https://www.epfl.ch/labs/transp-or/)
