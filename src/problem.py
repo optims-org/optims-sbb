@@ -1,9 +1,9 @@
-from .config.config_container import ConfigContainer
-from .output.output_container import OutputContainer
-from .parameter.activity_param_container import ActivityParam
-from .scenario.container.activity_sets import ActivitySet
-from .scenario.container.persons import Person
-from .scenario.container.travel_components import TravelDict
+from src.config.config_container import ConfigContainer
+from src.output.output_container import OutputContainer
+from src.parameter.activity_param_container import ActivityParam
+from src.scenario.container.activity_sets import ActivitySet
+from src.scenario.container.persons import Person
+from src.scenario.container.travel_components import TravelDict
 
 
 class OptimizationProblem:

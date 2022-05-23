@@ -1,12 +1,12 @@
 import logging
 
-from .container.persons import Person
-from .container.scenario import ScenarioContainer
-from .loader.activity_sets_loader import load_activity_sets
-from .loader.travel_components_loader import load_travel_data
-from ..config.config_container import ConfigContainer
-from ..parameter.activity_param_loader import load_activity_params
-from ..utils.data_loader import data_loader
+from src.scenario.container.persons import Person
+from src.scenario.container.scenario import ScenarioContainer
+from src.scenario.loader.activity_sets_loader import load_activity_sets
+from src.scenario.loader.travel_components_loader import load_travel_data
+from src.config.config_container import ConfigContainer
+from src.parameter.activity_param_loader import load_activity_params
+from src.utils.data_loader import data_loader
 
 
 def create_scenario(config: ConfigContainer) -> ScenarioContainer:

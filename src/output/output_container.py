@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Dict
 
-from ..scenario.container.activity_sets import ActivitySet
-from ..scenario.container.persons import Person
+from src.scenario.container.activity_sets import ActivitySet
+from src.scenario.container.persons import Person
 
 
 @dataclass

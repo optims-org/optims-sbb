@@ -2,10 +2,10 @@ import logging
 from pathlib import Path
 from typing import Dict, List
 
-from ..container.locations import Location
-from ..container.persons import Person
-from ..container.travel_components import Mode, TimePeriod, TravelIndicator, ODTuple, TravelDict
-from ...utils.data_loader import data_loader
+from src.scenario.container.locations import Location
+from src.scenario.container.persons import Person
+from src.scenario.container.travel_components import Mode, TimePeriod, TravelIndicator, ODTuple, TravelDict
+from src.utils.data_loader import data_loader
 
 
 def load_travel_data(travel_components_file: Path, persons_list: List[Person]) -> Dict[Person, TravelDict]:

@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import scipy.interpolate as interpol
 
-from .colors import get_color_for_act_type
+from src.output.plots.colors import get_color_for_act_type
 
 
 def plot_timing_distribution_for_act_type(schedule_df: pd.DataFrame, output_folder, timing_type: str,

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from .colors import get_color_for_act_type, get_activity_hierarchy
+from src.output.plots.colors import get_color_for_act_type, get_activity_hierarchy
 
 
 def plot_activity_profile(schedule_df: pd.DataFrame, output_folder, act_types: List[str], save_fig=True):

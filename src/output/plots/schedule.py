@@ -3,8 +3,8 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 
-from .colors import get_color_for_act_type
-from ...utils.constants import DUSK_NAME
+from src.output.plots.colors import get_color_for_act_type
+from src.utils.constants import DUSK_NAME
 
 
 def plot_schedule(schedule_df, output_folder, save_fig=True):

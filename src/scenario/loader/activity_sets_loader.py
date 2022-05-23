@@ -2,10 +2,10 @@ import logging
 from pathlib import Path
 from typing import Dict, List
 
-from ..container.activity_sets import Activity, ActivitySet
-from ..container.locations import Location
-from ..container.persons import Person
-from ...utils.data_loader import data_loader
+from src.scenario.container.activity_sets import Activity, ActivitySet
+from src.scenario.container.locations import Location
+from src.scenario.container.persons import Person
+from src.utils.data_loader import data_loader
 
 
 def load_activity_sets(activity_sets_file: Path, persons_list: List[Person]) -> Dict[Person, ActivitySet]:

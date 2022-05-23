@@ -2,10 +2,10 @@ from typing import Dict, List
 
 import numpy as np
 
-from .constants import DAWN_NAME, HOME_NAME
-from ..parameter.activity_param_container import ActivityParam
-from ..scenario.container.activity_sets import ActivitySet
-from ..scenario.container.persons import Person
+from src.utils.constants import DAWN_NAME, HOME_NAME
+from src.parameter.activity_param_container import ActivityParam
+from src.scenario.container.activity_sets import ActivitySet
+from src.scenario.container.persons import Person
 
 
 def assign_desired_timings(persons: List[Person], activity_sets: Dict[Person, ActivitySet],

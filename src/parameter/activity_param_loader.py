@@ -1,9 +1,9 @@
 from pathlib import Path
 from typing import Dict
 
-from .activity_param_container import ActivityParam as ActParam
-from .activity_param_container import ActivityParamContainer as ActParamContainer
-from ..utils.data_loader import data_loader
+from src.parameter.activity_param_container import ActivityParam as ActParam
+from src.parameter.activity_param_container import ActivityParamContainer as ActParamContainer
+from src.utils.data_loader import data_loader
 
 
 def load_activity_params(param_file: Path) -> Dict[str, ActParam]:

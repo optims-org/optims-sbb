@@ -4,11 +4,11 @@ import time
 
 import ray
 
-from .config.config_container import ConfigContainer
-from .output.output_container import OutputContainer
-from .problem import OptimizationProblem
-from .scenario.container.scenario import ScenarioContainer
-from .solution import Solution
+from src.config.config_container import ConfigContainer
+from src.output.output_container import OutputContainer
+from src.problem import OptimizationProblem
+from src.scenario.container.scenario import ScenarioContainer
+from src.solution import Solution
 
 optimization_models = {'scip': 'src.ortools_model.optimization_core',
                        'gurobi': 'src.gurobi_model.optimization_core'}

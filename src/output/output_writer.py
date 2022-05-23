@@ -4,14 +4,14 @@ import os
 import numpy as np
 import pandas as pd
 
-from .exporter.matsim_plans import write_matsim_plans
-from .plots.activity_profile import plot_activity_profile
-from .plots.schedule import plot_schedule
-from .plots.timing_distribution import plot_timing_distribution_for_act_type
-from .plots.timing_duration_heatmap import plot_heatmap_for_act_type
-from ..config.config_container import ConfigContainer
-from ..solution import Solution
-from ..utils.constants import DAWN_NAME, DUSK_NAME, HOME_NAME
+from src.output.exporter.matsim_plans import write_matsim_plans
+from src.output.plots.activity_profile import plot_activity_profile
+from src.output.plots.schedule import plot_schedule
+from src.output.plots.timing_distribution import plot_timing_distribution_for_act_type
+from src.output.plots.timing_duration_heatmap import plot_heatmap_for_act_type
+from src.config.config_container import ConfigContainer
+from src.solution import Solution
+from src.utils.constants import DAWN_NAME, DUSK_NAME, HOME_NAME
 
 
 class OutputWriter:
