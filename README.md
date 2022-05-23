@@ -60,7 +60,7 @@ In: *Swiss Transport Research Conference 2021*, Ascona, Switzerland.
 
 ``optims-sbb`` is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
 
-This license does not grant permission to use the trade names, trademarks, service marks, or names of the Licensors (SBB), 
+This license does not grant permission to use the trade names, trademarks, service marks, or names of the Licensors (SBB and EPFL), 
 except as required for reasonable and customary use in describing the origin of the work and reproducing the
 content of the copyright notice.
 
