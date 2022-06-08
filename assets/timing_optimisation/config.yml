@@ -1,0 +1,15 @@
+input_paths:
+  persons: ..\..\assets\timing_optimisation\persons.yml
+  activity_sets: ..\..\assets\timing_optimisation\activity_sets.yml
+  activity_parameter: ..\..\assets\timing_optimisation\activity_parameter.yml
+  travel_components: ..\..\assets\timing_optimisation\travel_components.yml
+solver_settings:
+  solver_name: SCIP
+time_periods:
+  all_day:
+    period_start: 0
+    period_end: 26
+modes:
+  travel:
+    home_bound: False
+output_folder: ..\..\assets\timing_optimisation\output

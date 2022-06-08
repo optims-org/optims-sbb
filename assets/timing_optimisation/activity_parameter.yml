@@ -1,0 +1,28 @@
+regular:
+  home_budget:
+    penalty_short: 0
+    penalty_long: -0.35
+  dawn:
+  dusk:
+    penalty_early: -0.7
+    penalty_late: -1.0
+  work:
+    penalty_early: -0.6
+    penalty_late: -0.4
+    penalty_short: -0.02
+    penalty_long: -0.3
+  lunch:
+    penalty_early: -1.6
+    penalty_late: -0.8
+    penalty_short: -7.5
+    penalty_long: -1.4
+  dinner:
+    penalty_early: -0.07
+    penalty_late: -0.6
+    penalty_short: -7.5
+    penalty_long: -1.4
+  sport:
+    penalty_early: -1.6
+    penalty_late: -0.8
+    penalty_short: -7.5
+    penalty_long: -1.4

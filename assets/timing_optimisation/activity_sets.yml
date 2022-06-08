@@ -1,0 +1,48 @@
+1:
+  dawn:
+    activity_type: dawn
+    locations: homeplace
+    desired_duration: 11.4
+  work:
+    activity_type: work
+    locations: workplace
+    desired_timing: 7.3
+    desired_duration: 4
+  lunch:
+    activity_type: lunch
+    locations: restaurant
+    desired_timing: 11.9
+    desired_duration: 0.9
+  work_2:
+    activity_type: work
+    locations: workplace
+    desired_timing: 13.5
+    desired_duration: 5
+  dusk:
+    activity_type: dusk
+    locations: homeplace
+    desired_timing: 19.7
+2:
+  dawn:
+    activity_type: dawn
+    locations: homeplace
+    desired_duration: 12
+  work:
+    activity_type: work
+    locations: workplace
+    desired_timing: 7.3
+    desired_duration: 9
+  homedinner:
+    activity_type: dinner
+    locations: homeplace
+    desired_timing: 18.0
+    desired_duration: 1.5
+  sport:
+    activity_type: sport
+    locations: tennis
+    desired_timing: 20
+    desired_duration: 2
+  dusk:
+    activity_type: dusk
+    locations: homeplace
+    desired_timing: 22.0
