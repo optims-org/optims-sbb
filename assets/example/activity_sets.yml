@@ -10,7 +10,6 @@
     desired_timing: 20.7
   home:
     activity_type: home
-    scoring_group: all
     locations: homeplace
     desired_timing: 17.0
   lunch:

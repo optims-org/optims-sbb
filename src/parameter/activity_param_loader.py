@@ -26,6 +26,8 @@ def load_activity_params(param_file: Path) -> Dict[str, ActParam]:
         for act_type, activity_groups in activity_types.items():
             if not activity_groups:
                 activity_groups = {'': {}}
+            if any(_.startswith('penalty') for _ in activity_groups.keys()):
+                activity_groups = {'': activity_groups}
             for gr, pa in activity_groups.items():
                 assert pa.get('penalty_early', 0) <= 0
                 assert pa.get('penalty_late', 0) <= 0

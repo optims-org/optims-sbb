@@ -57,6 +57,9 @@ class ActivityPenalties:
                   for a in self.activities for i in range(len(a.desired_timing))}
         la_max = {(a.label, i): m.NumVar(name=f'lamax_{a}_{i}', lb=-inf, ub=inf)
                   for a in self.activities for i in range(len(a.desired_timing))}
+
+        # todo: introduce helper variables for extra strong penalties (i.e. piecewise penalties)
+
         # binary auxiliary variable to see which start time was chosen in the case multiple start times are given
         w_x = {(a.label, i): m.IntVar(name=f'start_choice_{a}_{i}', lb=0, ub=1)
                for a in self.activities if len(a.desired_timing) > 1 for i in range(len(a.desired_timing))}
@@ -116,7 +119,7 @@ class ActivityPenalties:
 
             for i, des_dur in enumerate(des_durations):
                 if a in primary_act_labels:
-                    act_params = self.act_param[(f'{act.act_type}_budget', 'all')]
+                    act_params = self.act_param[(f'{act.act_type}_budget', '')]
                     des_dur_tot = sum(sum(b.desired_duration) for b in self.activities if b.act_type == act.act_type)
                     m.Add(sd_max[a, i] >= (des_dur_tot
                                            - m.Sum(d[b.label] for b in self.activities if b.act_type == act.act_type)))
@@ -124,7 +127,7 @@ class ActivityPenalties:
                                            - des_dur_tot))
 
                 elif a == DAWN_NAME:
-                    act_params = self.act_param[(f'{HOME_NAME}_budget', 'all')]
+                    act_params = self.act_param[(f'{HOME_NAME}_budget', '')]
                     m.Add(sd_max[a, i] >= des_dur - m.Sum(d[b] for b in home_act_labels))
                     m.Add(ld_max[a, i] >= m.Sum(d[b] for b in home_act_labels) - des_dur)
                 else:

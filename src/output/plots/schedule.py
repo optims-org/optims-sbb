@@ -19,10 +19,11 @@ def plot_schedule(schedule_df, output_folder, save_fig=True):
     person_ids = schedule_df.index.unique()
     assert len(person_ids) == 1
     person_id = person_ids[0]
+    max_time = max(schedule_df[['realized_timing', 'realized_duration']].sum(axis=1))
     plt.figure(figsize=[20, 3])
     y1 = [0, 0]
     y2 = [1, 1]
-    plt.fill_between([0, 24], y1, y2, color='silver')
+    plt.fill_between([0, max_time], y1, y2, color='silver')
 
     for idx, row in schedule_df.iterrows():
         end_time = row['realized_timing'] + row['realized_duration']
@@ -39,9 +40,9 @@ def plot_schedule(schedule_df, output_folder, save_fig=True):
                      fontsize=8)
             plt.fill_between(x, y1, y2, color=get_color_for_act_type('travel'))
 
-    plt.xticks(np.arange(0, 25))
+    plt.xticks(np.arange(0, max_time + 1))
     plt.yticks([])
-    plt.xlim([0, 24])
+    plt.xlim([0, max_time])
     plt.ylim([-0.2, 2])
     plt.xlabel('time of day [h]')
     if save_fig:

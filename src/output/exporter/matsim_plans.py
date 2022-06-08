@@ -4,7 +4,7 @@ import io
 from matsim import writers
 
 from src.solution import Solution
-from ...utils.constants import DUSK_NAME
+from src.utils.constants import DUSK_NAME
 
 
 def write_matsim_plans(output_filename, solution: Solution):

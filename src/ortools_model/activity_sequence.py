@@ -31,6 +31,7 @@ class ActivitySequence:
                 w_subtour: Variable which indicates whether the activity takes place in a sub-tour.
         """
 
+        self._fix_activity_order(m, z)
         self._fix_activity_participation(m, w)
         self._restrict_sequence_of_home_and_primary_activities(m, z)
 
@@ -42,6 +43,18 @@ class ActivitySequence:
         self._fix_subtour_activities(m, w_subtour)
 
         return w_tour, w_subtour
+
+    def _fix_activity_order(self, m, z):
+        """
+            This method fixes the activity sequence as given by the desired timings of the input schedules.
+        """
+
+        # todo: this method fixes the sequence for all scenarios. it should be configurable
+        sorted_acts = sorted(self.activities, key=lambda a: a.desired_timing)
+        prev_act = sorted_acts[0]
+        for b in sorted_acts[1:]:
+            m.Add(z[prev_act.label, b.label] == 1)
+            prev_act = b
 
     def _fix_activity_participation(self, m, w):
         """
