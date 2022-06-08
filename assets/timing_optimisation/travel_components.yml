@@ -6,32 +6,14 @@
           homeplace: 99999
           workplace: 0.3333333333333333
           restaurant: 99999
-          cafeteria: 99999
-          tennis: 0.8
         workplace:
           homeplace: 0.3333333333333333
           workplace: 99999
           restaurant: 0.4166666666666667
-          cafeteria: 0.3333333333333333
-          tennis: 99999
         restaurant:
           homeplace: 99999
           workplace: 0.4166666666666667
           restaurant: 99999
-          cafeteria: 99999
-          tennis: 99999
-        cafeteria:
-          homeplace: 99999
-          workplace: 0.3333333333333333
-          restaurant: 99999
-          cafeteria: 99999
-          tennis: 99999
-        tennis:
-          homeplace: 0.8
-          workplace: 99999
-          restaurant: 99999
-          cafeteria: 99999
-          tennis: 99999
 2:
   travel:
     travel_times:
@@ -39,18 +21,12 @@
         homeplace:
           homeplace: 99999
           workplace: 0.3333333333333333
-          restaurant: 99999
-          cafeteria: 99999
           tennis: 0.8
         workplace:
           homeplace: 0.3333333333333333
           workplace: 99999
-          restaurant: 0.4166666666666667
-          cafeteria: 0.3333333333333333
           tennis: 99999
         tennis:
           homeplace: 0.8
           workplace: 99999
-          restaurant: 99999
-          cafeteria: 99999
           tennis: 99999
